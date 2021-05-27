@@ -6,7 +6,7 @@ Note: This version is a free version, open source, and without ads.
 
 ## Installation
 
-- Android: Download the latest version of the application on the  **[Google Play Store](https://play.google.com/store/apps/details?id=com.ams64.rlcalc)**
+- Android: Clone this git source, then build using Android Studio. Download the latest version of the application on the  **[Google Play Store](https://play.google.com/store/apps/details?id=com.ams64.rlcalc)**
 
 ## How to Use
 
