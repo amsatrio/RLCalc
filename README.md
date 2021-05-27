@@ -2,7 +2,7 @@
 
 An application for calculating resistors, inductors and capacitors free on android.
 
-Note: This is a free version, open source, and without ads.
+Note: This version is a free, open source, and without ads.
 
 ## Installation
 
