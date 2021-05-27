@@ -1,0 +1,99 @@
+<!--
+  ~ MIT License
+  ~
+  ~ Copyright (c) 2021 A M Satrio
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in all
+  ~ copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  ~ SOFTWARE.
+  -->
+
+<resources>
+    <string name="app_name">RLCalc</string>
+    <string name="title_activity_rlcactivity">RLCActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_configuration">Configuration</string>
+    <string name="title_filter_calculation">Filter Calculation</string>
+    <string name="title_name">RLCalc</string>
+    <string name="title_electrical_connection">Electrical Connection</string>
+    <string name="title_electrical_component">Electrical Component</string>
+    <string name="title_series">Series</string>
+    <string name="title_parallel">Parallel</string>
+    <string name="r">R</string>
+    <string name="l">L</string>
+    <string name="c">C</string>
+    <string name="rl">RL</string>
+    <string name="rc">RC</string>
+    <string name="lc">LC</string>
+    <string name="rlc">RLC</string>
+    <string name="title_back_button_image">Back Button Image</string>
+    <string name="title_resistor_section">Resistor Section</string>
+    <string name="hint_r1_value">R1 Value (Ohm)</string>
+    <string name="hint_r2_value">R2 Value (Ohm)</string>
+    <string name="hint_r3_value">R3 Value (Ohm)</string>
+    <string name="hint_r4_value">R4 Value (Ohm)</string>
+    <string name="hint_r5_value">R5 Value (Ohm)</string>
+    <string name="hint_r6_value">R6 Value (Ohm)</string>
+    <string name="hint_r7_value">R7 Value (Ohm)</string>
+    <string name="title_inductor_section">Inductor Section</string>
+    <string name="hint_l1_value">L1 Value (H)</string>
+    <string name="hint_l2_value">L2 Value (H)</string>
+    <string name="hint_l3_value">L3 Value (H)</string>
+    <string name="hint_l4_value">L4 Value (H)</string>
+    <string name="hint_l5_value">L5 Value (H)</string>
+    <string name="hint_l6_value">L6 Value (H)</string>
+    <string name="hint_l7_value">L7 Value (H)</string>
+    <string name="title_capacitor_section">Capacitor Section</string>
+    <string name="hint_c1_value">C1 Value (F)</string>
+    <string name="hint_c2_value">C2 Value (F)</string>
+    <string name="hint_c3_value">C3 Value (F)</string>
+    <string name="hint_c4_value">C4 Value (F)</string>
+    <string name="hint_c5_value">C5 Value (F)</string>
+    <string name="hint_c6_value">C6 Value (F)</string>
+    <string name="hint_c7_value">C7 Value (F)</string>
+    <string name="title_vac_single_phase_section">VAC Single Phase Section</string>
+    <string name="hint_v_value_default_220_vac">VAC Value (Default 220 VAC)</string>
+    <string name="hint_hz_value_default_50_hz">Hz Value (Default 50 Hz)</string>
+    <string name="title_button_result">Result</string>
+    <string name="title_textview_result_section">Result Section</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+</resources>

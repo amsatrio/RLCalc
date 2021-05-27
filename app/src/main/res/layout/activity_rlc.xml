@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ MIT License
+  ~
+  ~ Copyright (c) 2021 A M Satrio
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in all
+  ~ copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  ~ SOFTWARE.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:verticalScrollbarPosition="defaultPosition"
+    app:layout_scrollFlags="scroll"
+    tools:context=".RLCActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/purple_500"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp">
+
+        <ImageView
+            android:id="@+id/imageViewBackToMainMenu"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/title_back_button_image"
+
+            app:srcCompat="@drawable/abc_vector_test"
+            tools:ignore="NestedWeights" />
+
+        <TextView
+            android:id="@+id/textViewTitleRLC"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="1dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:padding="1dp"
+            android:paddingLeft="1dp"
+            android:paddingTop="1dp"
+            android:paddingRight="1dp"
+            android:paddingBottom="1dp"
+            android:text="@string/title_name"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayoutRSection"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_resistor_section" />
+
+                <EditText
+                    android:id="@+id/editTextNumberR1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hint_r1_value"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextNumberR2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hint_r2_value"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextNumberR3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hint_r3_value"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextNumberR4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hint_r4_value"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextNumberR5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hint_r5_value"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextNumberR6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hint_r6_value"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextNumberR7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hint_r7_value"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutLSection"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_inductor_section" />
+                <EditText
+                    android:id="@+id/editTextNumberL1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hint_l1_value"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextNumberL2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hint_l2_value"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextNumberL3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hint_l3_value"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextNumberL4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hint_l4_value"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextNumberL5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hint_l5_value"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextNumberL6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hint_l6_value"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextNumberL7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hint_l7_value"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutCSection"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_capacitor_section" />
+
+                <EditText
+                    android:id="@+id/editTextNumberC1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hint_c1_value"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextNumberC2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hint_c2_value"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextNumberC3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hint_c3_value"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextNumberC4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hint_c4_value"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextNumberC5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hint_c5_value"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextNumberC6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hint_c6_value"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextNumberC7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hint_c7_value"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutVAC"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_vac_single_phase_section" />
+
+                <EditText
+                    android:id="@+id/editTextNumberVAC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hint_v_value_default_220_vac"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextNumberVHz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hint_hz_value_default_50_hz"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:scrollbars="vertical"
+                android:visibility="visible">
+
+                <Button
+                    android:id="@+id/buttonResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/title_button_result"
+                    app:cornerRadius="4dp"
+                    tools:ignore="NestedWeights" />
+
+                <TextView
+                    android:id="@+id/textViewResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:scrollbarAlwaysDrawVerticalTrack="true"
+                    android:scrollbars="vertical"
+                    android:text="@string/title_textview_result_section"
+                    android:textSize="34sp"
+                    style="?android:attr/buttonBarStyle"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
