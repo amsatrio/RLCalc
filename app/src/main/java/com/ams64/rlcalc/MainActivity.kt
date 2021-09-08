@@ -28,11 +28,12 @@ package com.ams64.rlcalc
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Button
 import android.widget.RadioButton
 import android.widget.RadioGroup
 import androidx.appcompat.app.AlertDialog
-import com.google.android.gms.ads.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -107,6 +108,39 @@ class MainActivity : AppCompatActivity() {
             intentRLCActivity.putExtra("Electrical Component", "RLC")
             startActivity(intentRLCActivity)
             finish()
+        }
+
+    }
+
+
+    //OPTION MENU (TOP RIGHT)
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        val inflater = menuInflater
+        inflater.inflate(R.menu.option_menu, menu)
+
+        return true
+    }
+
+
+    //OPTION MENU (TOP RIGHT)
+    override fun onPrepareOptionsMenu(menu: Menu?): Boolean {
+        return super.onPrepareOptionsMenu(menu)
+    }
+
+
+    //OPTION MENU (TOP RIGHT)
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        // Handle presses on the action bar menu items
+        return when (item.itemId) {
+            R.id.about -> {
+                val intentAboutActivity =
+                    Intent(this, AboutActivity::class.java)
+                startActivity(intentAboutActivity)
+                true
+            }
+
+            else -> return super.onOptionsItemSelected(item)
         }
 
     }

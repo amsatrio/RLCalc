@@ -31,11 +31,9 @@ import android.view.View
 import android.widget.*
 import android.content.ClipData
 import android.content.ClipboardManager
+import android.view.Menu
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.AdView
-import com.google.android.gms.ads.MobileAds
-import com.google.android.gms.ads.RequestConfiguration
 import kotlin.math.*
 
 class RLCActivity : AppCompatActivity() {
@@ -45,6 +43,10 @@ class RLCActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_rlc)
+
+        //BACK BUTTON
+        // showing the back button in action bar
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         //Clipboard
         clipboardManager = getSystemService(CLIPBOARD_SERVICE) as ClipboardManager?
@@ -73,14 +75,6 @@ class RLCActivity : AppCompatActivity() {
         var c6 = 0.0
         var c7 = 0.0
 
-        val imageViewBackToMainMenu: ImageView =
-            findViewById(R.id.imageViewBackToMainMenu)
-        imageViewBackToMainMenu.setOnClickListener{
-            val intentMainActivity =
-                Intent(this, MainActivity::class.java)
-            startActivity(intentMainActivity)
-            finish()
-        }
 
         val editTextNumberR1: EditText = findViewById(R.id.editTextNumberR1)
         val editTextNumberR2: EditText = findViewById(R.id.editTextNumberR2)
@@ -832,6 +826,40 @@ class RLCActivity : AppCompatActivity() {
         return 1/(1/(R1) + 1/(R2) + 1/(R3) + 1/(R4) + 1/(R5) + 1/(R6) + 1/(R7) +
                 1/(C1) + 1/(C2) + 1/(C3) + 1/(C4) + 1/(C5) + 1/(C6) + 1/(C7) +
                 1/(L1) + 1/(L2) + 1/(L3) + 1/(L4) + 1/(L5) + 1/(L6) + 1/(L7))
+    }
+
+
+
+    //OPTION MENU (TOP RIGHT)
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        val inflater = menuInflater
+        inflater.inflate(R.menu.option_menu, menu)
+
+        return true
+    }
+
+
+    //OPTION MENU (TOP RIGHT)
+    override fun onPrepareOptionsMenu(menu: Menu?): Boolean {
+        return super.onPrepareOptionsMenu(menu)
+    }
+
+
+    //OPTION MENU (TOP RIGHT)
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        // Handle presses on the action bar menu items
+        return when (item.itemId) {
+            R.id.about -> {
+                val intentAboutActivity =
+                    Intent(this, AboutActivity::class.java)
+                startActivity(intentAboutActivity)
+                true
+            }
+
+            else -> return super.onOptionsItemSelected(item)
+        }
+
     }
 
     override fun onBackPressed() {
